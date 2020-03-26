@@ -30,7 +30,7 @@ class Index extends React.PureComponent {
       <div className={styles.pageContainer}>
         <div className={styles.header}>
           <img className={styles.logo} src={logo} />
-          <div className={styles.name}>x</div>
+          <div className={styles.name}>自由自在的鱼</div>
         </div>
         <div className={styles.appList}>
           {apps.map(app => (
