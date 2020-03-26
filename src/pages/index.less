@@ -42,7 +42,18 @@ html, body {
     text-align: center;
     width: 250px;
 
+    a {
+      text-decoration: none;
+      color: #7499ff;
+
+      &:hover {
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
     .icon {
+      display: inline-block;
       border: 1px solid #d9d9d9;
       border-radius: 8px;
       width: 100px;
@@ -59,16 +70,6 @@ html, body {
       height: 40px;
       line-height: 40px;
       font-size: 14px;
-
-      a {
-        text-decoration: none;
-        color: #7499ff;
-
-        &:hover {
-          text-decoration: none;
-          font-weight: bold;
-        }
-      }
     }
 
     .desc {

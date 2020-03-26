@@ -24,12 +24,14 @@ class Index extends React.PureComponent {
         <div className={styles.appList}>
           {apps.map(app => (
             <div key={app.id} className={styles.appContainer}>
-              <div className={styles.icon}>
-                <img src={app.icon}/>
-              </div>
-              <div className={styles.name}>
-                <a target="_blank" href={app.url}>{app.name}</a>
-              </div>
+              <a target="_blank" href={app.url}>
+                <div className={styles.icon}>
+                  <img src={app.icon}/>
+                </div>
+                <div className={styles.name}>
+                  {app.name}
+                </div>
+              </a>
               <div className={styles.desc}>{app.description}</div>
             </div>
           ))}
