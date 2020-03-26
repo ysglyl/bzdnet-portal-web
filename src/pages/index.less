@@ -29,7 +29,7 @@ html, body {
 
 .appList {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   border: 1px solid #d9d9d9;
   border-radius: 8px;
@@ -40,7 +40,7 @@ html, body {
     display: inline-block;
     margin: 5px 5px;
     text-align: center;
-    width: 200px;
+    width: 250px;
 
     .icon {
       border: 1px solid #d9d9d9;
@@ -48,11 +48,17 @@ html, body {
       width: 100px;
       height: 100px;
       margin: 0 auto;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
     }
 
     .name {
       height: 40px;
       line-height: 40px;
+      font-size: 14px;
 
       a {
         text-decoration: none;
@@ -60,12 +66,13 @@ html, body {
 
         &:hover {
           text-decoration: none;
+          font-weight: bold;
         }
       }
     }
 
     .desc {
-
+      font-size: 14px;
     }
 
   }
