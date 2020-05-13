@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './index.less';
 import logo from '../assets/logo.png';
 import iconScp from '../assets/apps/scp.png';
-import iconRecognition from '../assets/apps/recognition.png';
+import iconMessageBoard from '../assets/apps/message_board.png';
+import iconTimetable from '../assets/apps/timetable.png';
 
 class Index extends React.PureComponent {
   state = {
@@ -16,10 +17,17 @@ class Index extends React.PureComponent {
       },
       {
         id: 2,
-        name: '人脸识别',
-        icon: iconRecognition,
-        url: 'http://recognition.bzdnet.com',
-        description: '人脸识别',
+        name: '留言板',
+        icon: iconMessageBoard,
+        url: 'http://msgboard.bzdnet.com',
+        description: '留言板',
+      },
+      {
+        id: 3,
+        name: '简易排课工具',
+        icon: iconTimetable,
+        url: 'http://timetable.bzdnet.com',
+        description: '排课',
       },
     ],
   };
